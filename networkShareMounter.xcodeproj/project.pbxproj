@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		D60FA5201E7FBE1400D9B5A5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60FA51F1E7FBE1400D9B5A5 /* main.swift */; };
+		D60FA5271E7FBE2200D9B5A5 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60FA5261E7FBE2200D9B5A5 /* config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		D60FA51A1E7FBE1300D9B5A5 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
+			dstPath = /Library/LaunchDaemons;
 			dstSubfolderSpec = 0;
 			files = (
 			);
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		D60FA51C1E7FBE1400D9B5A5 /* networkShareMounter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = networkShareMounter; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60FA51F1E7FBE1400D9B5A5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D60FA5261E7FBE2200D9B5A5 /* config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
+		D6BA832A1E94F289003D4762 /* de.fau.uni-erlangen.networkShareMounter.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "de.fau.uni-erlangen.networkShareMounter.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +60,9 @@
 		D60FA51E1E7FBE1400D9B5A5 /* networkShareMounter */ = {
 			isa = PBXGroup;
 			children = (
+				D6BA832A1E94F289003D4762 /* de.fau.uni-erlangen.networkShareMounter.plist */,
 				D60FA51F1E7FBE1400D9B5A5 /* main.swift */,
+				D60FA5261E7FBE2200D9B5A5 /* config.swift */,
 			);
 			path = networkShareMounter;
 			sourceTree = "<group>";
@@ -122,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D60FA5201E7FBE1400D9B5A5 /* main.swift in Sources */,
+				D60FA5271E7FBE2200D9B5A5 /* config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +138,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -168,7 +175,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -180,6 +187,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -210,7 +218,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
@@ -219,7 +227,9 @@
 		D60FA5241E7FBE1400D9B5A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEVELOPMENT_TEAM = C8F68RFW4L;
+				INSTALL_PATH = "/Library/Application Support/FAUmac/bin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -228,7 +238,9 @@
 		D60FA5251E7FBE1400D9B5A5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEVELOPMENT_TEAM = C8F68RFW4L;
+				INSTALL_PATH = "/Library/Application Support/FAUmac/bin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -253,6 +265,7 @@
 				D60FA5251E7FBE1400D9B5A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
