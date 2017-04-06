@@ -9,17 +9,17 @@
 /* Begin PBXBuildFile section */
 		D60FA5201E7FBE1400D9B5A5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60FA51F1E7FBE1400D9B5A5 /* main.swift */; };
 		D60FA5271E7FBE2200D9B5A5 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60FA5261E7FBE2200D9B5A5 /* config.swift */; };
-		D6BA832B1E962458003D4762 /* de.fau.uni-erlangen.networkShareMounter.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = D6BA832A1E94F289003D4762 /* de.fau.uni-erlangen.networkShareMounter.plist */; };
+		D6BA832B1E962458003D4762 /* de.uni-erlangen.rrze.networkShareMounter.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = D6BA832A1E94F289003D4762 /* de.uni-erlangen.rrze.networkShareMounter.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		D60FA51A1E7FBE1300D9B5A5 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /Library/LaunchDaemons;
+			dstPath = /Library/LaunchAgents;
 			dstSubfolderSpec = 0;
 			files = (
-				D6BA832B1E962458003D4762 /* de.fau.uni-erlangen.networkShareMounter.plist in CopyFiles */,
+				D6BA832B1E962458003D4762 /* de.uni-erlangen.rrze.networkShareMounter.plist in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -29,7 +29,7 @@
 		D60FA51C1E7FBE1400D9B5A5 /* networkShareMounter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = networkShareMounter; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60FA51F1E7FBE1400D9B5A5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D60FA5261E7FBE2200D9B5A5 /* config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
-		D6BA832A1E94F289003D4762 /* de.fau.uni-erlangen.networkShareMounter.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "de.fau.uni-erlangen.networkShareMounter.plist"; sourceTree = "<group>"; };
+		D6BA832A1E94F289003D4762 /* de.uni-erlangen.rrze.networkShareMounter.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "de.uni-erlangen.rrze.networkShareMounter.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 		D60FA51E1E7FBE1400D9B5A5 /* networkShareMounter */ = {
 			isa = PBXGroup;
 			children = (
-				D6BA832A1E94F289003D4762 /* de.fau.uni-erlangen.networkShareMounter.plist */,
+				D6BA832A1E94F289003D4762 /* de.uni-erlangen.rrze.networkShareMounter.plist */,
 				D60FA51F1E7FBE1400D9B5A5 /* main.swift */,
 				D60FA5261E7FBE2200D9B5A5 /* config.swift */,
 			);
