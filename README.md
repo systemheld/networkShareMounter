@@ -12,6 +12,8 @@ If you don't want to set the array of shares to mount with MDM, you may use a co
 defaults write <your defaultsdomain> networkShares -array "smb://filer.your.domain/share" "smb://filer2.your.domain/home/Another Share/foobar" "smb://home.your.domain/%USERNAME%"
 ```
 
+In Addition, there is a `customNetworkShares` array in the same defaults domain, that is used for your users to add their own shares to the automount process.
+
 The simplest way though is an MDM with a payload of type `com.apple.ManagedClient.preferences` like this:
 
 ```xml
