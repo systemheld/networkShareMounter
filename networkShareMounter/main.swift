@@ -27,6 +27,11 @@ do {
 }
 
 var shares: [String] = UserDefaults(suiteName: config.defaultsDomain)?.array(forKey: "networkShares") as? [String] ?? []
+// every user may add its personal shares in the customNetworkShares array ...
+let customshares = UserDefaults(suiteName: config.defaultsDomain)?.array(forKey: "customNetworkShares") as? [String] ?? []
+for share in customshares {
+    shares.append(share)
+}
 // replace %USERNAME with local username - must be the same as directory service username!
 shares = shares.map {
     $0.replacingOccurrences(of: "%USERNAME%", with: NSUserName())
